@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title Chat Application Example by DEVAHOY
+    title Chat Application by KMUTNB
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.css')
     link(rel='stylesheet', href='css/main.css')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js')
@@ -24,9 +24,9 @@ html
                 form
                   .field.has-addons
                     p.control
-                      input(type='text', class='input', value='Chuck Norris', id='name')
+                      input(type='text', class='input', placeholder='name', id='name')
                     p.control.is-expanded
-                      input(type='text', class='input', placeholder='Try to say something', id='message')
+                      input(type='text', class='input', placeholder='Try to input something', id='message')
                     p.control
                       input(type='submit', class='button is-success', value='Post')
         footer
@@ -34,7 +34,7 @@ html
             .content
               p
                 | Powered by 
-                a(href='https://devahoy.com') DEVAHOY
+                a(href='https://kmutnb.ac.th') KMUTNB
       script.
         const socket = io();
         $('form').submit(function() {

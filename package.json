@@ -8,5 +8,20 @@
   },
   "devDependencies": {
     "standard": "^10.0.3"
-  }
+  },
+  "description": "Simple Chat\r ---",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phonbopit/simple-chat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Phonbopit/simple-chat/issues"
+  },
+  "homepage": "https://github.com/Phonbopit/simple-chat#readme"
 }
