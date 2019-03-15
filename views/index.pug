@@ -41,11 +41,11 @@ html
           const name = $('#name').val();
           const message = $('#message').val();
 
-          socket.emit('chatter', `${name} : ${message}`);
+          socket.emit('chat', `${name} : ${message}`);
           $('#message').val('');
           return false; 
         });
 
-        socket.on('chatter', function(message) {
+        socket.on('chat', function(message) {
           $('#chat-messages').append($('<li>').text(message));
         });

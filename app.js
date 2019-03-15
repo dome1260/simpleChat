@@ -21,8 +21,8 @@ app.get('/', (req, res) => {
 
 io.on('connection', (socket) => {
   console.log('User is connected')
-  socket.on('chatter', (message) => {
-    console.log('chatter : ', message)
-    io.emit('chatter', message)
+  socket.on('chat', (message) => {
+    console.log('chat : ', message)
+    io.emit('chat', message)
   })
 })
